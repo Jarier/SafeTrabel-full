@@ -2,6 +2,7 @@ package com.safetrabel.safetrabel_api.mapper;
 
 import org.mapstruct.Mapper;
 import org.mapstruct.factory.Mappers;
+import org.springframework.stereotype.Component;
 
 import com.safetrabel.safetrabel_api.model.dto.PhotosDTO;
 import com.safetrabel.safetrabel_api.model.entity.photos;
@@ -9,6 +10,7 @@ import com.safetrabel.safetrabel_api.model.entity.photos;
 
 
 @Mapper(componentModel = "spring")
+@Component 
 public interface PhotosMapper {
     PhotosMapper INSTANCE = Mappers.getMapper(PhotosMapper.class);
 
